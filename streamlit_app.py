@@ -282,13 +282,13 @@ with tab2:
         st.subheader("Symptom Count Distribution by Species")
         
         # Check if data is available and has required columns
-        if not data['df'].empty and 'AnimalName' in data['df'].columns and 'SymptomCount' in data['df'].columns and 'Dangerous' in data['df'].columns:
+        if not data['df'].empty and 'AnimalName' in data['df'].columns and 'Symptom' in data['df'].columns and 'Dangerous' in data['df'].columns:
             try:
                 # Create box plot of symptom counts by species
                 fig = px.box(
                     data['df'],
                     x='AnimalName',
-                    y='SymptomCount',
+                    y='Symptom',
                     color='Dangerous',
                     color_discrete_map={'Yes': danger_color, 'No': safe_color},
                     notched=True,
@@ -310,12 +310,12 @@ with tab2:
                 st.write("Showing a simpler alternative visualization:")
                 
                 # Create a simple bar chart instead
-                symptom_avg = data['df'].groupby(['AnimalName', 'Dangerous'])['SymptomCount'].mean().reset_index()
+                symptom_avg = data['df'].groupby(['AnimalName', 'Dangerous'])['Symptom'].mean().reset_index()
                 
                 fig = px.bar(
                     symptom_avg,
                     x='AnimalName',
-                    y='SymptomCount',
+                    y='Symptom',
                     color='Dangerous',
                     color_discrete_map={'Yes': danger_color, 'No': safe_color},
                     barmode='group',
