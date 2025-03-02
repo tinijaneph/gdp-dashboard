@@ -661,8 +661,8 @@ with tab4:
         st.subheader("Danger Indicators for Selected Species")
         
         # Filter danger patterns for selected species
-        species_danger_indicators = data['species_danger_patterns_df'][
-            data['species_danger_patterns_df']['AnimalName'] == selected_species_tab4
+        species_danger_indicators = data['species_danger_patterns'][
+            data['species_danger_patterns']['AnimalName'] == selected_species_tab4
         ].sort_values('RelativeRisk', ascending=False).head(10)
         
         # Create bar chart
