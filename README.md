@@ -10,7 +10,6 @@ Application Link: [https://dashboard-agent-799818976326.us-central1.run.app/](ur
 | Frontend           | Pure HTML + CSS + vanilla JS (no React/Vue)        | Single-page, Claude-style minimal UI |
 | Charts             | Plotly.js 2.27 (via CDN)                            | Responsive, good-looking |
 | Deployment ready   | Any platform that runs Python + uvicorn/gunicorn    | Docker-ready with minimal changes |
-| Hosting examples   | Cloud Run, Render, Fly.io, Railway, Vercel (with serverless adapter), GCP/AWS | Zero-ops possible |
 
 #### 2. Core Logic Flow
 ```
