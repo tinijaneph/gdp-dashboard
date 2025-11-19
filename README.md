@@ -1,5 +1,5 @@
 ### AI Employee Dashboard Agent – Technical & Product Spec  
-(File: `main (3).py` – current prototype state)
+Application Link: [https://dashboard-agent-799818976326.us-central1.run.app/](url)
 
 #### 1. Current Stack & Infrastructure
 | Layer              | Technology / Choice                                 | Notes |
@@ -32,7 +32,6 @@ Frontend replaces #dashboardContainer with the HTML
 - Natural-language → dashboard in <3 sec (even without Gemini)
 - 7 pre-defined dashboard types with professional visuals
 - Time-period filtering (this quarter / this month / last 90 days)
-- Fake but realistic dataset (75 employees + 90 days of time entries)
 - Fully client-side rendering → zero latency after response
 
 #### 4. Critical Parts to Improve for Real HR Use
@@ -70,7 +69,4 @@ Frontend replaces #dashboardContainer with the HTML
 - HRBPs use it in leadership meetings → looks cutting-edge with almost zero cost
 
 #### Bottom Line
-Right now you have a 90 % complete “wow” prototype.  
-With ~2 months of focused engineering (data connector + auth + better parser), this becomes one of the most useful internal tools an HR/People team can have in 2026.
-
-It’s not just another dashboard. It’s the “ChatGPT for People Data” that actually works inside the company firewall. Worth building.
+~2 months of focused engineering (data connector + auth + better parser)
